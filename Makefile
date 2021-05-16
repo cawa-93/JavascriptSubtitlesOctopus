@@ -310,7 +310,7 @@ dist/js/subtitles-octopus-worker.js: src/subtitles-octopus-worker.bc src/pre-wor
 		--post-js src/SubOctpInterface.js \
 		--post-js src/post-worker.js \
 		-s WASM=1 \
-		-s BUILD_AS_WORKER=1
+		-s BUILD_AS_WORKER=1 \
 		$(EMCC_COMMON_ARGS)
 
 dist/js/subtitles-octopus-worker-legacy.js: src/subtitles-octopus-worker.bc src/pre-worker.js src/unbrotli.js src/SubOctpInterface.js src/post-worker.js
